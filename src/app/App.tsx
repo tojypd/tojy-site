@@ -17,11 +17,9 @@ const NOISE = `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http:
 // ─────────────────────────────────────────────────────────────────────────────
 // Data는 ./data.ts 에서 관리합니다 (사진 교체·작품 추가는 그 파일에서)
 // ─────────────────────────────────────────────────────────────────────────────
-const CAT_COLORS: Record<string, string> = {
-  리얼리티: "bg-red-900/60 text-red-300 border-red-700/50",
-  서바이벌: "bg-red-600/40 text-red-200 border-red-600/60",
-  "OTT 디지털": "bg-red-900/60 text-red-300 border-red-700/50",
-};
+// 카테고리 뱃지는 모두 동일한 붉은 톤으로 통일 표시합니다.
+const CATEGORY_BADGE_STYLE =
+  "bg-red-900/60 text-red-300 border-red-700/50";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // App
@@ -166,7 +164,7 @@ export default function App() {
               className="text-5xl sm:text-7xl lg:text-8xl font-black leading-none mb-8 text-white tracking-tight"
               style={{ fontFamily: "'Noto Serif KR', serif" }}
             >
-              20년의 경험
+              20년의 경험,
               <br />
               최고의 콘텐츠
             </h1>
@@ -244,7 +242,7 @@ export default function App() {
                 정지윤과 조재영이 함께 설립한 영상 콘텐츠
                 기획·제작 전문 회사입니다. 방송, OTT, 리얼리티,
                 유튜브 채널, 라이브 커머스까지 다양한 플랫폼에서
-                검증된 크리에이티브로 시청자와 마켓 모두
+                검증된 크리에이티브로 시청자와 시장이 모두
                 인정하는 콘텐츠를 만들어갑니다.
               </p>
             </div>
@@ -322,11 +320,11 @@ export default function App() {
                 <div className="h-0.5 bg-gradient-to-r from-red-600 to-transparent" />
                 <div className="p-6 sm:p-8 bg-[#0d0d0d]">
                   <div className="flex items-center gap-5 mb-6">
-                    <div className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-red-600/50 transition-colors duration-300">
+                    <div className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-full overflow-hidden border-2 border-white/10">
                       <img
                         src={member.imageUrl}
                         alt={member.name}
-                        className="w-full h-full object-cover object-top scale-100 group-hover:scale-125 transition-transform duration-500 ease-out"
+                        className="w-full h-full object-cover object-top"
                       />
                     </div>
                     <div>
@@ -338,9 +336,15 @@ export default function App() {
                       >
                         {member.name}
                       </h3>
-                      <p className="text-red-500 text-[10px] font-mono tracking-[0.2em] uppercase">
+                      <p className="text-red-500 text-[10px] font-mono tracking-[0.2em] uppercase mb-1.5">
                         {member.role}
                       </p>
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="text-white/40 hover:text-white/70 text-xs font-mono transition-colors"
+                      >
+                        {member.email}
+                      </a>
                     </div>
                   </div>
                   <p className="text-white/50 text-sm leading-relaxed mb-5">
@@ -432,12 +436,12 @@ export default function App() {
                   <img
                     src={work.imageUrl}
                     alt={work.title}
-                    className="w-full h-44 object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                    className="w-full h-44 object-cover scale-100 group-hover:scale-110 transition-transform duration-500 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                   <div className="absolute top-2 left-2">
                     <span
-                      className={`text-[10px] px-2 py-0.5 border font-mono uppercase tracking-wider ${CAT_COLORS[work.category] ?? "bg-white/10 text-white/70 border-white/20"}`}
+                      className={`text-[10px] px-2 py-0.5 border font-mono uppercase tracking-wider ${CATEGORY_BADGE_STYLE}`}
                     >
                       {work.category}
                     </span>

@@ -25,8 +25,9 @@ export interface TeamMember {
   id: string;
   name: string;
   role: string;
+  email: string;
   bio: string;
-  imageUrl: string;    
+  imageUrl: string;
   highlights: string[];
 }
 
@@ -38,7 +39,8 @@ export const TEAM: TeamMember[] = [
     id: "jy1",
     name: "정지윤",
     role: "공동대표 Producer",
-    bio: "영상 콘텐츠 기획·제작 20년차. M-net 및 공중파 예능PD 출신으로 JTBC, OCN, 삼성뮤직, 플래닛TV, CJ오쇼핑 등 방송·유튜브·라이브 커머스 전반을 아우르는 폭넓은 제작 경력을 보유하고 있습니다.",
+    email: "jjungpd@gmail.com",
+    bio: "영상 콘텐츠 기획·제작 20년차. PLANET350 출신으로 JTBC, OCN, 삼성뮤직, 플래닛TV, CJ오쇼핑 등 방송·유튜브·라이브 커머스 전반을 아우르는 폭넓은 제작 경력을 보유하고 있습니다.",
     imageUrl: "/images/team/jungjiyoon.jpg",
     highlights: [
       "2024~2025 EBS1&E채널 <서장훈의 이웃집 백만장자>",
@@ -61,6 +63,7 @@ export const TEAM: TeamMember[] = [
     id: "jy2",
     name: "조재영",
     role: "공동대표 Producer",
+    email: "Jojaeyoung.pd@gmail.com",
     bio: "영상 콘텐츠 기획·제작 20년차. KBS, MBC, SBS, JTBC, Mnet, tvN 등 주요 방송사와 넷플릭스·쿠팡플레이·YOUKU 등 국내외 OTT 플랫폼에서 다양한 장르의 프로그램을 기획·제작한 검증된 프로듀서입니다.",
     imageUrl: "/images/team/jojaeyoung.jpg",
     highlights: [
