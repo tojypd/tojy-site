@@ -32,7 +32,7 @@ export interface TeamMember {
 }
 
 // 히어로(맨 위 배경) 사진 — public/images/hero/hero.jpg 를 교체하세요.
-export const HERO_IMAGE = "/images/hero/hero.jpg";
+export const HERO_IMAGE = "/images/hero/he1ro.jpg";
 
 export const TEAM: TeamMember[] = [
   {
