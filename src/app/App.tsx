@@ -320,48 +320,49 @@ export default function App() {
                 className="border border-white/10 hover:border-red-600/30 transition-all duration-300 group overflow-hidden"
               >
                 <div className="h-0.5 bg-gradient-to-r from-red-600 to-transparent" />
-                <div className="flex flex-col sm:flex-row">
-                  <div className="sm:w-48 lg:w-52 shrink-0 relative overflow-hidden">
-                    <img
-                      src={member.imageUrl}
-                      alt={member.name}
-                      className="w-full h-56 sm:h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent sm:bg-gradient-to-r" />
-                  </div>
-                  <div className="p-6 flex-1 flex flex-col bg-[#0d0d0d]">
-                    <h3
-                      className="text-2xl font-black text-white mb-1"
-                      style={{
-                        fontFamily: "'Noto Serif KR', serif",
-                      }}
-                    >
-                      {member.name}
-                    </h3>
-                    <p className="text-red-500 text-[10px] font-mono tracking-[0.2em] uppercase mb-4">
-                      {member.role}
-                    </p>
-                    <p className="text-white/50 text-sm leading-relaxed mb-5 flex-1">
-                      {member.bio}
-                    </p>
-                    <div className="border-t border-white/10 pt-4">
-                      <p className="text-[10px] text-white/30 font-mono tracking-[0.3em] uppercase mb-3">
-                        주요 작품
-                      </p>
-                      <ul className="space-y-1.5">
-                        {member.highlights.map((h, i) => (
-                          <li
-                            key={i}
-                            className="flex items-start gap-2 text-xs text-white/40 hover:text-white/70 transition-colors"
-                          >
-                            <span className="text-red-600 mt-0.5 shrink-0 font-bold">
-                              ▸
-                            </span>
-                            <span>{h}</span>
-                          </li>
-                        ))}
-                      </ul>
+                <div className="p-6 sm:p-8 bg-[#0d0d0d]">
+                  <div className="flex items-center gap-5 mb-6">
+                    <div className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-red-600/50 transition-colors duration-300">
+                      <img
+                        src={member.imageUrl}
+                        alt={member.name}
+                        className="w-full h-full object-cover object-top scale-100 group-hover:scale-125 transition-transform duration-500 ease-out"
+                      />
                     </div>
+                    <div>
+                      <h3
+                        className="text-2xl font-black text-white mb-1"
+                        style={{
+                          fontFamily: "'Noto Serif KR', serif",
+                        }}
+                      >
+                        {member.name}
+                      </h3>
+                      <p className="text-red-500 text-[10px] font-mono tracking-[0.2em] uppercase">
+                        {member.role}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-white/50 text-sm leading-relaxed mb-5">
+                    {member.bio}
+                  </p>
+                  <div className="border-t border-white/10 pt-4">
+                    <p className="text-[10px] text-white/30 font-mono tracking-[0.3em] uppercase mb-3">
+                      주요 작품
+                    </p>
+                    <ul className="space-y-1.5">
+                      {member.highlights.map((h, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2 text-xs text-white/40 hover:text-white/70 transition-colors"
+                        >
+                          <span className="text-red-600 mt-0.5 shrink-0 font-bold">
+                            ▸
+                          </span>
+                          <span>{h}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
