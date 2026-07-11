@@ -63,7 +63,7 @@ export const TEAM: TeamMember[] = [
     id: "jy2",
     name: "조재영",
     role: "공동대표 Producer",
-    email: "Jojaeyoung.pd@gmail.com",
+    email: "jojaeyoung.pd@gmail.com",
     bio: "영상 콘텐츠 기획·제작 20년차. KBS, MBC, SBS, JTBC, Mnet, tvN 등 주요 방송사와 넷플릭스·쿠팡플레이·YOUKU 등 국내외 OTT 플랫폼에서 다양한 장르의 프로그램을 기획·제작한 검증된 프로듀서입니다.",
     imageUrl: "/images/team/jojaeyoung.jpg",
     highlights: [
