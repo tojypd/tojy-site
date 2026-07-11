@@ -164,7 +164,7 @@ export default function App() {
               className="text-5xl sm:text-7xl lg:text-8xl font-black leading-none mb-8 text-white tracking-tight"
               style={{ fontFamily: "'Noto Serif KR', serif" }}
             >
-              20년의 경험,
+              20년의 경험
               <br />
               최고의 콘텐츠
             </h1>
