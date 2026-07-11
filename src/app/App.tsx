@@ -166,7 +166,7 @@ export default function App() {
               className="text-5xl sm:text-7xl lg:text-8xl font-black leading-none mb-8 text-white tracking-tight"
               style={{ fontFamily: "'Noto Serif KR', serif" }}
             >
-              20년의 경험,
+              20년의 경험
               <br />
               최고의 콘텐츠
             </h1>
@@ -244,7 +244,7 @@ export default function App() {
                 정지윤과 조재영이 함께 설립한 영상 콘텐츠
                 기획·제작 전문 회사입니다. 방송, OTT, 리얼리티,
                 유튜브 채널, 라이브 커머스까지 다양한 플랫폼에서
-                검증된 크리에이티브로 시청자와 시장이 모두
+                검증된 크리에이티브로 시청자와 마켓 모두
                 인정하는 콘텐츠를 만들어갑니다.
               </p>
             </div>
