@@ -242,7 +242,7 @@ export default function App() {
                 정지윤과 조재영이 함께 설립한 영상 콘텐츠
                 기획·제작 전문 회사입니다. 방송, OTT, 리얼리티,
                 유튜브 채널, 라이브 커머스까지 다양한 플랫폼에서
-                검증된 크리에이티브로 시청자와 시장이 모두
+                검증된 크리에이티브로 시청자와 마켓이 모두
                 인정하는 콘텐츠를 만들어갑니다.
               </p>
             </div>
@@ -307,7 +307,7 @@ export default function App() {
               className="text-3xl sm:text-4xl lg:text-5xl font-black text-white"
               style={{ fontFamily: "'Noto Serif KR', serif" }}
             >
-              두 명의 프로듀서
+              대표 프로듀서
             </h2>
           </div>
 
