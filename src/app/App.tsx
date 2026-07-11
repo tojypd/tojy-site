@@ -514,12 +514,8 @@ export default function App() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               {[
                 {
-                  label: "정지윤 대표",
-                  email: "jjungpd@gmail.com",
-                },
-                {
-                  label: "조재영 대표",
-                  email: "Jojaeyoung.pd@gmail.com",
+                  label: "투제이와이",
+                  email: "tojypd@naver.com",
                 },
               ].map(({ label, email }) => (
                 <a
